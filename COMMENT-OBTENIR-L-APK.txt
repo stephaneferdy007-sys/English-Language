@@ -1,0 +1,67 @@
+========================================================
+  ENGLISH MASTERY — Comment obtenir le fichier APK
+========================================================
+
+Je n'ai pas pu compiler l'APK directement dans mon environnement
+(aucun kit Android installe et aucun acces aux serveurs Google/Gradle
+pour le telecharger). J'ai donc prepare le projet pour qu'il se
+compile TOUT SEUL dans le cloud, gratuitement, SANS rien installer
+sur ton ordinateur. Il te suffit de suivre ces etapes.
+
+--------------------------------------------------------
+METHODE A — Compilation automatique sur GitHub (recommandee)
+--------------------------------------------------------
+Aucun logiciel a installer. Il faut juste un compte GitHub (gratuit).
+
+1. Va sur https://github.com et cree un compte (si tu n'en as pas).
+
+2. Clique sur le bouton "+" en haut a droite > "New repository".
+   - Donne un nom, ex : english-mastery
+   - Laisse en "Private" ou "Public" (peu importe)
+   - Clique "Create repository".
+
+3. Sur la page du depot, clique sur le lien
+   "uploading an existing file".
+   Glisse-depose TOUT le contenu de ce dossier (y compris le
+   dossier cache .github), puis clique "Commit changes".
+
+   (Astuce : si le dossier .github n'apparait pas, zippe le
+    projet et depose le .zip, GitHub le decompresse pas tout
+    seul -> dans ce cas depose plutot les fichiers un par un,
+    ou utilise GitHub Desktop.)
+
+4. En haut, clique sur l'onglet "Actions".
+   La compilation "Build APK" demarre automatiquement.
+   Attends ~3 a 5 minutes (point vert = termine).
+
+5. Clique sur la ligne de compilation terminee, puis en bas,
+   dans la section "Artifacts", clique sur "EnglishMastery-APK".
+   Un fichier .zip se telecharge : dedans se trouve ton APK
+   (app-debug.apk).
+
+6. Transfere ce fichier app-debug.apk sur les telephones
+   (par Bluetooth, cable USB, WhatsApp, email, etc.).
+
+--------------------------------------------------------
+INSTALLER L'APK SUR CHAQUE TELEPHONE
+--------------------------------------------------------
+1. Sur le telephone, ouvre le fichier app-debug.apk.
+2. Android demandera d'autoriser "l'installation d'apps de
+   sources inconnues" : accepte pour cette fois.
+3. Appuie sur "Installer". L'app "English Mastery" apparait
+   dans le menu. Elle fonctionne 100% hors ligne.
+
+--------------------------------------------------------
+METHODE B — Avec Android Studio (si tu l'as deja)
+--------------------------------------------------------
+1. Ouvre Android Studio > "Open" > choisis ce dossier.
+2. Attends la fin de la synchronisation Gradle.
+3. Menu "Build" > "Build Bundle(s) / APK(s)" > "Build APK(s)".
+4. L'APK est genere dans :
+   app/build/outputs/apk/debug/app-debug.apk
+
+========================================================
+L'APK "debug" produit est signe automatiquement et
+s'installe sans probleme sur n'importe quel telephone
+Android 7.0 (ou plus recent). Parfait pour le partager.
+========================================================
